@@ -7,6 +7,19 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+
+ * {
+    box-sizing: border-box; /* Inclui bordas e padding no tamanho total */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    overflow-x: hidden; /* Garante que a largura não passe dos limites */
+}
+
+
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -22,6 +35,7 @@
             align-items: center;
             min-height: 100vh;
             flex-direction: column;
+            overflow-x: hidden; /* Remove qualquer rolagem horizontal */
         }
 
         
