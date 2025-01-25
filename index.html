@@ -16,7 +16,7 @@
             background-position: center; /* Centraliza a imagem */
             background-repeat: no-repeat; /* Não repete a imagem */
             background-attachment: fixed; /* Fixa o fundo */  
-            width: 100%; /* Largura total */          
+                      
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,7 +58,7 @@
             max-width: 300px;
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 20px;
             font-size: 16px;
         }
 
@@ -77,6 +77,9 @@
             position: relative;
             width: 100%;
             max-width: 340px;
+            border: 2px solid gold;
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
         }
 
         @keyframes fadeIn {
@@ -277,15 +280,26 @@
             <i class="fas fa-search search-icon"></i>
             <input type="text" id="searchInput" placeholder="Pesquise a Aula que Deseja Assistir...">
         </div>
-
+<br>
         <div class="video-wrapper">
             <!-- Video 1 -->
             <div class="video-container fade-in" id="video1">
                 <!-- O iframe será carregado via JavaScript -->
             </div>
+            
             <div class="descricao fade-in" data-title="Aula 1">
                 <h2>Aula 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus scelerisque nunc ut interdum cursus.</p>
+                <p>Seja muito Bem-vindo(a) ao curso de violão! Espero que você aproveite bem essa jornada! 
+                    Esta primeira aula é um vídeo de apresentação e boas vindas. Para cada video aula teremos
+                    um pdf pra baixar. <br> <details> <summary> 🎸 "Aprender violão é uma jornada incrível,... </summary>  
+                    e cada acorde que você aprende te leva mais perto de tocar as músicas 
+                    que você ama. Não desista, mesmo quando as cordas parecerem difíceis de
+                    pressionar ou os dedos cansarem. Cada prática, cada erro e cada acerto fazem 
+                    parte do processo. Com dedicação, as músicas que hoje parecem impossíveis 
+                    vão fluir naturalmente. Confie no seu ritmo, mantenha o foco e 
+                    lembre-se: o som que você está criando é único e só seu!" 🎶
+                    Continue tocando, você vai surpreender até a si mesmo! 🚀✨ </details>
+                </p>
             
             </div>
 
@@ -295,7 +309,8 @@
             </div>
             <div class="descricao" data-title="Aula 2">
                 <h2>Aula 2</h2>
-                <p>Curabitur vehicula risus id nisi facilisis, nec pharetra purus auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                <p>Nesta Segunda aula vamos conhecer cada parte do instrumento, vamos aprender a afinar e vamos 
+                    aprender os primeiros acordes. </p>
                 <button class="pdf-button" data-pdf="pdfs/aula2.pdf" data-name="aula2.pdf">
                 Baixar PDF da Aula 2
               </button>
@@ -308,8 +323,10 @@
             </div>
             <div class="descricao" data-title="Aula 3">
                 <h2>Aula 3</h2>
-                <p>Nam at felis vitae ligula efficitur volutpat. Aliquam erat volutpat. Sed vulputate purus sit amet eros interdum, sit amet tincidunt justo fringilla.</p>
-                <button class="pdf-button" data-pdf="pdfs/aula2.pdf" data-name="aula2.pdf">
+                <p>Nesta aula 3, vamos ver a importância dos treinos. Estudar repetindo a mudança dos acordes 
+                    constatemente até pegar a agilidade, mas isso requer tempo e paciência consigo mesmo.
+                </p>
+                <button class="pdf-button" data-pdf="pdfs/aula3.pdf" data-name="aula3.pdf">
                     Baixar PDF da Aula 3
                   </button>
     
@@ -361,7 +378,7 @@
         let currentPlayers = {}; // Armazenar os players atuais
 
         // IDs dos vídeos do YouTube
-        const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "qWCrObxTJAE", "GBy5t29r-kg"];
+        const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "GBy5t29r-kg"];
 
         // Função para carregar vídeos do YouTube no container
         function loadYouTubeVideo(containerId, videoId) {
