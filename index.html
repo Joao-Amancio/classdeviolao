@@ -68,6 +68,7 @@ body {
     flex-direction: column;
     position: relative; /* Necessário para o pseudo-elemento */
     min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo 100% da altura da tela */
+    align-items: center; /* Centraliza os conteúdos horizontalmente */
 }
 
 body::before {
@@ -89,8 +90,18 @@ body::before {
     padding: 20px; /* Espaçamento interno do conteúdo */
     max-width: 1200px; /* Define uma largura máxima para o conteúdo */
     margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    width: 90%; /* Garante que o conteúdo se ajuste na largura da tela */
+    text-align: center; /* Centraliza o texto no conteúdo */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
 }
 
+/* Ajustes específicos para telas pequenas */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px; /* Reduz o espaçamento interno em telas menores */
+        width: 95%; /* Ocupa quase toda a largura da tela */
+    }
+}
 
         
 
