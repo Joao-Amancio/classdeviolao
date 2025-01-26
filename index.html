@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
 
-/* * {
+ * {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
@@ -50,47 +50,15 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1; 
-}
-*/
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Remove rolagem horizontal */
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    position: relative; /* Necessário para o pseudo-elemento */
-    min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo 100% da altura da tela */
-    align-items: center; /* Centraliza os conteúdos horizontalmente */
-}
-
-body::before {
-    content: "";
-    position: fixed; /* Fixa a imagem na tela (viewport) */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("assets/fundo.JPG");
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    z-index: -1; /* Coloca a imagem atrás do conteúdo */
     pointer-events: none; /* Garante que o fundo não interfira em cliques */
 }
 
+
 .content {
-    padding: 20px; /* Espaçamento interno do conteúdo */
-    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    max-width: 1200px;
     width: 90%; /* Garante que o conteúdo se ajuste na largura da tela */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
     text-align: center; /* Centraliza o texto no conteúdo */
     box-sizing: border-box; /* Inclui padding no cálculo de largura */
 }
@@ -102,6 +70,8 @@ body::before {
         width: 95%; /* Ocupa quase toda a largura da tela */
     }
 }
+
+
 
         
 
