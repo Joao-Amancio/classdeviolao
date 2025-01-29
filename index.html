@@ -51,14 +51,6 @@ html, body {
 }
 
 
-.content {
-    padding: 20px;
-    max-width: 1200px;
-    width: 90%; /* Garante que o conteúdo se ajuste na largura da tela */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto no conteúdo */
-    box-sizing: border-box; /* Inclui padding no cálculo de largura */
-}
 
 /* Ajustes específicos para telas pequenas */
 @media (max-width: 768px) {
@@ -384,8 +376,16 @@ html, body {
             </div>
             <div class="descricao" data-title="Aula 4">
                 <h2>Aula 4</h2>
-                <p>Vivamus auctor urna in sollicitudin interdum. Etiam laoreet velit ac tortor dictum, at malesuada lorem tincidunt. Fusce malesuada, sapien sed laoreet volutpat.</p>
-                <button class="pdf-button" data-pdf="pdfs/aula2.pdf" data-name="aula2.pdf">
+                <p>Na Aula 4 vamos aprender, mas 3 acordes. o Sol, o Lá maior e o Lá menor. <br>
+                    <details><summary> Ei! Sei que aprender violão pode parecer 
+                    difícil no começo, mas continue firme! 
+                    Todo grande músico já foi iniciante um dia. O segredo está na paciência, 
+                    na prática constante e em se divertir no processo. Mesmo que... </summary> hoje pareça complicado, 
+                    com o tempo seus dedos vão se acostumar 
+                    e os acordes vão sair naturalmente. Celebre cada pequena conquista e, 
+                    mais importante, curta o som que você está criando! 
+                    Você está no caminho certo. 🎸🔥 </details></p>
+                <button class="pdf-button" data-pdf="pdfs/aula4.pdf" data-name="aula4.pdf">
                     Baixar PDF da Aula 4
                   </button>
     
@@ -424,7 +424,7 @@ html, body {
         let currentPlayers = {}; // Armazenar os players atuais
 
         // IDs dos vídeos do YouTube
-        const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "GBy5t29r-kg"];
+        const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "yptPpg-ctjQ"];
 
         // Função para carregar vídeos do YouTube no container
         function loadYouTubeVideo(containerId, videoId) {
