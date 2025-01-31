@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+
+
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  border-radius: 20%;
+  border: none;
+  z-index: 1;
+}
+
+#profile2 img {
+  display: flex;
+  position: relative;
+  align-items: center;
+  backdrop-filter: blur(0px);
+  width: 100%;
+  top: 10px;
+  left: 0px;
+  border-radius: none;
+  z-index: -1;
+}
+
+
+
+/* Centraliza a .box na tela */
+.box {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative; /* Para manter o contexto de posicionamento */
+}
+
+/* Estilização da img-box */
+.img-box {
+  background-color: rgba(159, 81, 52, 0.764);
+  width: 50%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Estilização da imagem fixa e centralizada */
+.img-box img {
+  position: fixed;
+  top: 30%;              /* Centraliza verticalmente */
+  left: 30%;             /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
+  width: 30%;            /* Define um tamanho proporcional */
+  max-width: 300px;      /* Define um tamanho máximo */
+  border-radius: 70px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .img-box img {
+    width: 50%;          /* Reduz o tamanho da imagem em telas menores */
+  }
+}
+
+.form-box {
+    background-color: rgba(4, 0, 0, 0.927);
+    /*backdrop-filter: blur(40px);*/
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+.form-box2 .anamnese {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 930px) {
+    .img-box {
+      display: none;
+    }
+  
+    .img2 .borboleta {
+      display: none;
+    }
+  
+   
+    .form-box {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 111, 0);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+.back-to-top {
+  -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+  outline: none; /* Remove o contorno de foco */
+}
+
+.back-to-top:hover {
+  opacity: 9;
+}
+
+
+
+.instagram-button {
+    position: fixed;
+    bottom: 80px;
+    right: 22px;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .instagram-button {
+    -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+    outline: none; /* Remove o contorno de foco */
+  }
+  
+  #instagramButton {
+    -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+    outline: none; /* Remove o contorno de foco */
+  }
+  
+  .instagram-button img {
+    width: 45px;
+    height: 45px;
+  }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .instagram-button {
+    bottom: 80px;
+    right: 23px;
+  }
+
+  .instagram-button img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.instagram-button img {
+  -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+  outline: none; /* Remove o contorno de foco */
+}
+
+footer {
+    font-weight: bold;
+    border: solid 2px rgba(68, 68, 64, 0.462);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(214, 214, 214, 0.2);
+  }
+  
+  footer,
+  .amancio {
+    padding: 5px 25px 5px 25px;
+    background: none;
+    margin-bottom: -100px;
+  }
+  
+
+
+
