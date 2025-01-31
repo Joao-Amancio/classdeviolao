@@ -54,6 +54,20 @@
                     flex-direction: column;
                     overflow-x: hidden; 
                 }
+
+                @media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    
+    .video-container {
+        max-width: 100%;
+    }
+    
+    .descricao {
+        width: 90%;
+    }
+}
         
                 
         
@@ -74,6 +88,8 @@
                     width: 100%;
                     padding: 20px;
                     margin: 0 auto;
+                    width: 90%; /* Evita que fique muito largo no mobile */
+    max-width: 600px; /* Define um limite de largura */
                 }
         
                 .search-bar {
