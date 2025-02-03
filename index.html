@@ -471,6 +471,56 @@
                       </button>
         
                 </div>
+
+                <!-- Video 6 -->
+                <div class="video-container fade-in" id="video6">
+                    <!-- O iframe será carregado via JavaScript -->
+                </div>
+                <div class="descricao" data-title="Aula 6">
+                    <h2>Aula 6</h2>
+                    <p>Nesta aula 6, vamos praticar a batida Pop Rock com a canção Sou Casa e vamos aprender mais um acorde. 
+                        <details> <summary> Talvez o vídeo seja perdido por motivo de direitos autorais, mas... </summary>caso isso aconteça 
+                           e você não consiga reproduzir o vídeo, entre em contato pelo whatsapp que mando a aula 6 pra você.</details> 
+
+                    </p>
+                    <button class="pdf-button" data-pdf="pdfs/aula6.pdf" data-name="aula6.pdf">
+                        Baixar PDF da Aula 6
+                      </button>
+        
+                </div>
+
+                <!-- Video 7 -->
+                <div class="video-container fade-in" id="video7">
+                    <!-- O iframe será carregado via JavaScript -->
+                </div>
+                <div class="descricao" data-title="Aula 7">
+                    <h2>Aula 7</h2>
+                    <p>Nesta aula 7, damos uma atenção especial ao Fá (F), um acorde com pestana. No 
+                        vídeo não tem o Ré menor (Dm), porém tá no pdf pra você montar o acorde no violão.
+                    </details> 
+
+                    </p>
+                    <button class="pdf-button" data-pdf="pdfs/aula7.pdf" data-name="aula7.pdf">
+                        Baixar PDF da Aula 7
+                      </button>
+        
+                </div>
+
+                <!-- Video 8 -->
+                <div class="video-container fade-in" id="video8">
+                    <!-- O iframe será carregado via JavaScript -->
+                </div>
+                <div class="descricao" data-title="Aula 8">
+                    <h2>Aula 8</h2>
+                    <p>Nesta aula 8, Vamos tocar várias canções com apenas 2 acordes.
+                    </details> 
+
+                    </p>
+                    <button class="pdf-button" data-pdf="pdfs/aula8.pdf" data-name="aula8.pdf">
+                        Baixar PDF da Aula 8
+                      </button>
+        
+                </div>
         
                 </div>
             </div>
@@ -507,7 +557,7 @@
                 let currentPlayers = {}; // Armazenar os players atuais
         
                 // IDs dos vídeos do YouTube
-                const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "yptPpg-ctjQ", "xyMu7aLaqo4"];
+                const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "yptPpg-ctjQ", "xyMu7aLaqo4", "jOvfXBmwQvA", "Wy7V9m3GKuk", "9BNuo2luzZo"];
         
                 // Função para carregar vídeos do YouTube no container
                 function loadYouTubeVideo(containerId, videoId) {
@@ -649,6 +699,8 @@ const typingText = document.getElementById("typing-text");
 if (typingContainer && typingText) {
   const textToType = "A música é uma jornada, e cada nota que você toca é um passo à frente. No início, pode parecer desafiador, mas lembre-se: todo grande músico já foi um iniciante. A paciência e a prática transformam pequenos erros em belas melodias. Confie no seu progresso, toque com o coração e sinta a evolução a cada acorde. A persistência é a chave para fazer sua música ecoar no mundo. Não desista, sua jornada musical está apenas começando!";
   
+  const professorName = `<span id="professor-name" style="display: block; margin-top: 20px; font-weight: bold;">Prof. Júnior Amancio</span>`;
+  
   let index = 0;
   const speed = 100;
 
@@ -657,7 +709,13 @@ if (typingContainer && typingText) {
       typingText.innerHTML += textToType.charAt(index);
       index++;
       setTimeout(typeText, speed);
+    } else {
+        // Adiciona o nome do professor após a animação do texto
+        setTimeout(() => {
+            typingText.innerHTML += professorName;
+        }, speed * 5);
     }
+
   }
 
   // Inicia a animação quando o elemento aparece na tela
@@ -665,7 +723,7 @@ if (typingContainer && typingText) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         typeText();
-        observer.unobserve(entry.target); // Para de observar após ativar a animação
+        observer.unobservee(ntry.target); // Para de observar após ativar a animação
       }
     });
   }, { threshold: 1.0 });
