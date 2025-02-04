@@ -12,24 +12,10 @@
   width: 300px;
   height: 200px;
   margin: auto;
-  border-radius: 20%;
+  border-radius: 20px; 
   border: none;
   z-index: 1;
 }
-
-#profile2 img {
-  display: flex;
-  position: relative;
-  align-items: center;
-  backdrop-filter: blur(0px);
-  width: 100%;
-  top: 10px;
-  left: 0px;
-  border-radius: none;
-  z-index: -1;
-}
-
-
 
 /* Centraliza a .box na tela */
 .box {
@@ -47,7 +33,7 @@
   background-color: rgba(159, 81, 52, 0.764);
   width: 50%;
   padding: 20px;
-  border-radius: 20px;
+ /*border-radius: 20px; */ 
 }
 
 /* Estilização da imagem fixa e centralizada */
@@ -58,12 +44,13 @@
   transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
   width: 30%;            /* Define um tamanho proporcional */
   max-width: 300px;      /* Define um tamanho máximo */
-  border-radius: 70px;
+ /* border-radius: 70px;*/
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
   .img-box img {
+    
     width: 50%;          /* Reduz o tamanho da imagem em telas menores */
   }
 }
@@ -73,9 +60,8 @@
     /*backdrop-filter: blur(40px);*/
     padding: 30px 40px;
     width: 50%;
-    border-radius: 0 20px 20px 0;
     z-index: 1;
-    border-radius: 20px;
+   /* border-radius: 20px; */ 
   }
 
 .form-box2 .anamnese {
@@ -99,7 +85,7 @@
    
     .form-box {
       width: 100%;
-      border-radius: 20px;
+      border-radius: 0;
     }
   }
   
