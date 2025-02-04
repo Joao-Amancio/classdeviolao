@@ -1,446 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style2.css">
-    <title>Aulas de Violão</title>
-    <meta property="og:title" content="Anamnese - Estúdio Energia e Saúde" />
-    <meta
-      property="og:description"
-      content="Estúdio Energia e Saúde"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <meta property="og:url" content="https://anamnese-energiaesaude.com.br" />
-    <meta
-      property="og:image"
-      content="https://anamnese-energiaesaude.com.br/assets/logo.png"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    
-    <!-- Outros metadados comuns -->
-    <meta
-      name="description"
-      content="Anamnese"
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Marina" />
+    <title>
+      Login de Acesso para a Ficha de Cadastro e Anamnese | Kátia Cristina |
+      Terapeuta Naturopata
+    </title>
 
-       
-
-
-</head>
-<body>
-
-  
-  
-    <div class="box">
-      
-        <div class="img-box">
-          <img src="./assets/capa.png" />    <br> <br>        
-
-          <div class="typing-container" id="typing-container">
-        <span id="typing-text"></span>
-      </div>
-        
-        </div>       
-        
-        
-        <div class="form-box">
-        <!-- <div id="profile">
-            <img src="./assets/img.png" alt="" />
-            
-          </div>--> 
-           
-          
-
-          <div class="form-box2">
-            
-            <div id="profile2">
-              <img src="./assets/logo1.png" alt="" />        
-            </div> 
-
-
-            <div class="container">
-                <h1>Plataforma de Vídeos</h1>
-        
-                <!-- Barra de Pesquisa -->
-                <div class="search-bar">
-                    <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" placeholder="Pesquise a Aula que Deseja Assistir...">
-                </div>
-        <br>
-                <div class="video-wrapper">
-                    <!-- Video 1 -->
-                    <div class="video-container fade-in" id="video1">
-                        <!-- O iframe será carregado via JavaScript -->
-                    </div>
-                    
-                    <div class="descricao fade-in" data-title="Aula 1">
-                        <h2>Aula 1</h2>
-                        <p>Seja muito Bem-vindo(a) ao curso de violão! Espero que você aproveite bem essa jornada! 
-                            Esta primeira aula é um vídeo de apresentação e boas vindas. Para cada video aula teremos
-                            um pdf pra baixar. <br> <details> <summary> 🎸 "Aprender violão é uma jornada incrível,... </summary>  
-                            e cada acorde que você aprende te leva mais perto de tocar as músicas 
-                            que você ama. Não desista, mesmo quando as cordas parecerem difíceis de
-                            pressionar ou os dedos cansarem. Cada prática, cada erro e cada acerto fazem 
-                            parte do processo. Com dedicação, as músicas que hoje parecem impossíveis 
-                            vão fluir naturalmente. Confie no seu ritmo, mantenha o foco e 
-                            lembre-se: o som que você está criando é único e só seu!" 🎶
-                            Continue tocando, você vai surpreender até a si mesmo! 🚀✨ </details>
-                        </p>
-                    
-                    </div>
-        
-                    <!-- Video 2 -->
-                    <div class="video-container fade-in" id="video2">
-                        <!-- O iframe será carregado via JavaScript -->
-                    </div>
-                    <div class="descricao" data-title="Aula 2">
-                        <h2>Aula 2</h2>
-                        <p>Nesta Segunda aula vamos conhecer cada parte do instrumento, vamos aprender a afinar e vamos 
-                            aprender os primeiros acordes. </p>
-                        <button class="pdf-button" data-pdf="pdfs/aula2.pdf" data-name="aula2.pdf">
-                        Baixar PDF da Aula 2
-                      </button>
-        
-                    </div>
-        
-                    <!-- Video 3 -->
-                    <div class="video-container fade-in" id="video3">
-                        <!-- O iframe será carregado via JavaScript -->
-                    </div>
-                    <div class="descricao" data-title="Aula 3">
-                        <h2>Aula 3</h2>
-                        <p>Nesta aula 3, vamos ver a importância dos treinos. Estudar repetindo a mudança dos acordes 
-                            constatemente até pegar a agilidade, mas isso requer tempo e paciência consigo mesmo.
-                        </p>
-                        <button class="pdf-button" data-pdf="pdfs/aula3.pdf" data-name="aula3.pdf">
-                            Baixar PDF da Aula 3
-                          </button>
-            
-                    </div>
-        
-                    <!-- Video 4 -->
-                    <div class="video-container fade-in" id="video4">
-                        <!-- O iframe será carregado via JavaScript -->
-                    </div>
-                    <div class="descricao" data-title="Aula 4">
-                        <h2>Aula 4</h2>
-                        <p>Na Aula 4 vamos aprender, mas 3 acordes. o Sol, o Lá maior e o Lá menor. <br>
-                            <details><summary> Ei! Sei que aprender violão pode parecer 
-                            difícil no começo, mas continue firme! 
-                            Todo grande músico já foi iniciante um dia. O segredo está na paciência, 
-                            na prática constante e em se divertir no processo. Mesmo que... </summary> hoje pareça complicado, 
-                            com o tempo seus dedos vão se acostumar 
-                            e os acordes vão sair naturalmente. Celebre cada pequena conquista e, 
-                            mais importante, curta o som que você está criando! 
-                            Você está no caminho certo. 🎸🔥 </details></p>
-                        <button class="pdf-button" data-pdf="pdfs/aula4.pdf" data-name="aula4.pdf">
-                            Baixar PDF da Aula 4
-                          </button>
-            
-                    </div>
-        
-                   <!-- Video 5 -->
-                   <div class="video-container fade-in" id="video5">
-                    <!-- O iframe será carregado via JavaScript -->
-                </div>
-                <div class="descricao" data-title="Aula 5">
-                    <h2>Aula 5</h2>
-                    <p>Nesta aula 5, vamos aprender a primeira batida, o rítmo Pop Rock.
-                    </p>
-                    <button class="pdf-button" data-pdf="pdfs/aula5.pdf" data-name="aula5.pdf">
-                        Baixar PDF da Aula 5
-                      </button>
-        
-                </div>
-
-                <!-- Video 6 -->
-                <div class="video-container fade-in" id="video6">
-                    <!-- O iframe será carregado via JavaScript -->
-                </div>
-                <div class="descricao" data-title="Aula 6">
-                    <h2>Aula 6</h2>
-                    <p>Nesta aula 6, vamos praticar a batida Pop Rock com a canção Sou Casa e vamos aprender mais um acorde. 
-                        <details> <summary> Talvez o vídeo seja perdido por motivo de direitos autorais, mas... </summary>caso isso aconteça 
-                           e você não consiga reproduzir o vídeo, entre em contato pelo whatsapp que mando a aula 6 pra você.</details> 
-
-                    </p>
-                    <button class="pdf-button" data-pdf="pdfs/aula6.pdf" data-name="aula6.pdf">
-                        Baixar PDF da Aula 6
-                      </button>
-        
-                </div>
-
-                <!-- Video 7 -->
-                <div class="video-container fade-in" id="video7">
-                    <!-- O iframe será carregado via JavaScript -->
-                </div>
-                <div class="descricao" data-title="Aula 7">
-                    <h2>Aula 7</h2>
-                    <p>Nesta aula 7, damos uma atenção especial ao Fá (F), um acorde com pestana. No 
-                        vídeo não tem o Ré menor (Dm), porém tá no pdf pra você montar o acorde no violão.
-                    </details> 
-
-                    </p>
-                    <button class="pdf-button" data-pdf="pdfs/aula7.pdf" data-name="aula7.pdf">
-                        Baixar PDF da Aula 7
-                      </button>
-        
-                </div>
-
-                <!-- Video 8 -->
-                <div class="video-container fade-in" id="video8">
-                    <!-- O iframe será carregado via JavaScript -->
-                </div>
-                <div class="descricao" data-title="Aula 8">
-                    <h2>Aula 8</h2>
-                    <p>Nesta aula 8, Vamos tocar várias canções com apenas 2 acordes.
-                    </details> 
-
-                    </p>
-                    <button class="pdf-button" data-pdf="pdfs/aula8.pdf" data-name="aula8.pdf">
-                        Baixar PDF da Aula 8
-                      </button>
-        
-                </div>
-
-                <!-- Video 9 -->
-                <div class="video-container fade-in" id="video9">
-                    <!-- O iframe será carregado via JavaScript -->
-                </div>
-                <div class="descricao" data-title="Aula 9">
-                    <h2>Aula 9</h2>
-                    <p>Nesta aula 9, Vamos estudar sobre acordes relativos.
-                    </details> 
-
-                    </p>
-                    <button class="pdf-button" data-pdf="pdfs/aula9.pdf" data-name="aula9.pdf">
-                        Baixar PDF da Aula 9
-                      </button>
-        
-                </div>
-        
-                </div>
-            </div>
-        
-            <footer>
-                <div id="social-links">
-                  <a href="https://instagram.com/junior.amancio" target="_blank"><ion-icon name="logo-instagram"></ion-icon
-                    ></a>
-                  <a href="https://youtube.com/amancio131079" target="_blank"><ion-icon name="logo-youtube"></ion-icon
-                    ></a>
-                  <a href="https://facebook.com" target="_blank"></i><ion-icon name="logo-facebook"></ion-icon
-                    ></a>
-                  <a href="https://wa.me/5581996174799" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                </div>
-                <br><p >&copy; 2025 Plataforma criado por Amancio JR. <br> </p> 
-              </footer>
-            
-        
-              
-          <a href="#" class="back-to-top" id="back-to-top">&#8679;</a>
-        
-          <script
-              type="module"
-              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-            ></script>
-            <script
-              nomodule
-              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-            ></script>
-        
-            <script src="https://www.youtube.com/iframe_api"></script>
-
-            <script>
-                let currentPlayers = {}; // Armazenar os players atuais
-        
-                // IDs dos vídeos do YouTube
-                const videoIds = ["jG3MUrD_zEk", "6_FjH5rjY7Q", "cV65cELvqEw", "yptPpg-ctjQ", "xyMu7aLaqo4", "jOvfXBmwQvA", "Wy7V9m3GKuk", "9BNuo2luzZo", "VmzOCQKl0tI"];
-        
-                // Função para carregar vídeos do YouTube no container
-                function loadYouTubeVideo(containerId, videoId) {
-                    const player = new YT.Player(containerId, {
-                        height: '315',
-                        width: '340',
-                        videoId: videoId,
-                        events: {
-                            'onReady': function(event) {
-                                console.log("Player pronto:", event.target.getVideoUrl());
-                                currentPlayers[containerId] = event.target;
-                            },
-                            'onStateChange': function(event) {
-                                console.log("Estado do player mudou para", event.data);
-                                onPlayerStateChange(event, event.target);
-                            }
-                        }
-                    });
-                }
-        
-                // Função chamada quando o estado do player muda
-                function onPlayerStateChange(event, currentPlayer) {
-                    if (event.data === YT.PlayerState.PLAYING) {
-                        console.log("Iniciando a reprodução, pausando outros players...");
-                        pauseOtherPlayers(currentPlayer);
-                    }
-                }
-        
-                // Função para pausar outros players
-                function pauseOtherPlayers(currentPlayer) {
-                    console.log("Pausando outros players...");
-                    for (const containerId in currentPlayers) {
-                        if (currentPlayers.hasOwnProperty(containerId)) {
-                            const player = currentPlayers[containerId];
-                            if (player && player !== currentPlayer) {
-                                console.log("Pausando o player", player.getVideoUrl());
-                                player.pauseVideo();
-                            }
-                        }
-                    }
-                }
-        
-                // Iniciar vídeos quando o documento estiver carregado
-                window.onload = function() {
-                    if (typeof YT !== 'undefined' && YT.loaded) {
-                        console.log("API do YouTube está pronta");
-                        const videoContainers = document.querySelectorAll(".video-container");
-                        videoContainers.forEach((container, index) => {
-                            loadYouTubeVideo(container.id, videoIds[index % videoIds.length]);
-                        });
-                    } else {
-                        console.error("A API do YouTube não está carregada.");
-                    }
-                };
-        
-                // Função de busca
-                document.getElementById("searchInput").addEventListener("input", function() {
-                    const query = this.value.toLowerCase();
-                    const descriptions = document.querySelectorAll(".descricao");
-        
-                    descriptions.forEach(function(descricao) {
-                        const title = descricao.getAttribute("data-title").toLowerCase();
-                        if (title.includes(query)) {
-                            descricao.style.display = "block";
-                            descricao.previousElementSibling.style.display = "block"; // Mostrar vídeo
-                        } else {
-                            descricao.style.display = "none";
-                            descricao.previousElementSibling.style.display = "none"; // Esconder vídeo
-                        }
-                    });
-                });
-            </script>
-        
-        <script>
-            // Função para exibir "Voltar ao Topo"
-            document.addEventListener("DOMContentLoaded", () => {
-              const backToTopButton = document.getElementById("back-to-top");
-              window.addEventListener("scroll", () => {
-                backToTopButton.style.display = window.pageYOffset > 300 ? "block" : "none";
-              });
-              backToTopButton.addEventListener("click", (event) => {
-                event.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              });
-            });
-          </script>
-        
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // Seleciona todas as divs que você deseja animar
-                const elements = document.querySelectorAll('.video-container, .descricao');
-        
-                // Função para adicionar a classe de fade-in
-                const fadeInOnScroll = (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('fade-in'); // Ativa a animação
-                            observer.unobserve(entry.target); // Remove o observador após a animação
-                        }
-                    });
-                };
-        
-                // Cria um observer para observar quando os elementos entram na tela
-                const observer = new IntersectionObserver(fadeInOnScroll, {
-                    threshold: 0.5 // Define que 50% do elemento precisa estar visível para ativar a animação
-                });
-        
-                // Observa todos os elementos
-                elements.forEach(element => {
-                    observer.observe(element);
-                });
-            });
-        </script>
-        
-        <script>
-            // Adicione o evento de clique nos botões para baixar o PDF
-            const pdfButtons = document.querySelectorAll(".pdf-button")
-        
-            pdfButtons.forEach((button) => {
-              button.addEventListener("click", () => {
-                const pdfUrl = button.getAttribute("data-pdf")
-                const fileName = button.getAttribute("data-name")
-        
-                const link = document.createElement("a")
-                link.href = pdfUrl
-                link.download = fileName
-                document.body.appendChild(link)
-                link.click()
-                document.body.removeChild(link)
-              })
-            })
-          </script>    
-
-         <script>// 3. Texto animado
-         // 3. Texto animado fixo
-const typingContainer = document.getElementById("typing-container");
-const typingText = document.getElementById("typing-text");
-
-if (typingContainer && typingText) {
-  const textToType = "A música é uma jornada, e cada nota que você toca é um passo à frente. No início, pode parecer desafiador, mas lembre-se: todo grande músico já foi um iniciante. A paciência e a prática transformam pequenos erros em belas melodias. Confie no seu progresso, toque com o coração e sinta a evolução a cada acorde. A persistência é a chave para fazer sua música ecoar no mundo. Não desista, sua jornada musical está apenas começando!";
-  
-  const professorName = `<span id="professor-name" style="display: block; margin-top: 20px; font-weight: bold;">Prof. Júnior Amancio</span>`;
-  
-  let index = 0;
-  const speed = 100;
-
-  function typeText() {
-    if (index < textToType.length) {
-      typingText.innerHTML += textToType.charAt(index);
-      index++;
-      setTimeout(typeText, speed);
-    } else {
-        // Adiciona o nome do professor após a animação do texto
-        setTimeout(() => {
-            typingText.innerHTML += professorName;
-        }, speed * 5);
-    }
-
-  }
-
-  // Inicia a animação quando o elemento aparece na tela
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        typeText();
-        observer.unobservee(ntry.target); // Para de observar após ativar a animação
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        outline: none;
       }
-    });
-  }, { threshold: 1.0 });
 
-  observer.observe(typingContainer);
-}
+      body {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-url) no-repeat top center/cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
 
+      :root {
+        --bg-url: url(./assets/img10-mobile.png);
+      }
 
+      form {
+        width: 400px;
+        /*background: #ffffff56;*/
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
 
-            </script>
-    
-    
-  
+      form .row {
+        position: relative;
+        margin: 20px 0;
+      }
 
-         
-            </body>
-          <br><br><br><br><br><br>
+      form input {
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 20px;
+        border: 1px solid green;
+      }
+
+      form input[type="submit"] {
+        background: rgba(0, 128, 0, 0.452);
+        color: #fff;
+        font-size: 18px;
+        border-color: black;
+        cursor: pointer;
+        padding-right: 20px;
+      }
+      form input[type="submit"]:hover,
+      form input[type="submit"]:focus {
+        background: rgb(35, 121, 63);
+      }
+
+      form .row img {
+        position: absolute;
+        top: 23%;
+        right: 55px;
+        color: #555;
+        transform: translateY(-50%);
+        opacity: 0.5;
+      }
+
+      form .row img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      h3 {
+        left: 50px;
+        position: relative;
+        font-size: 30px;
+        color: rgb(1, 37, 10);
+      }
+
+      form h3 :before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+      }
+
+      .hand {
+        position: relative;
+        float: right;
+        left: -141px;
+        top: 34px;
+        height: 50px;
+        width: 40px;
+      }
+
+      .hand {
+        animation: bounce 2s infinite alternate;
+        -webkit-animation: bounce 2s infinite alternate;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+
+      .whatsapp {
+        position: relative;
+        float: right;
+        left: -110px;
+        top: 1px;
+        font-size: 30px;
+        color: green;
+      }
+
+      h6 {
+        text-align: center;
+      }
+
+      h3 {
+        animation-duration: 3s;
+        animation-name: slidein;
+        color: rgb(17, 17, 17);
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 50%;
+          width: 100%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h3>Login:</h3>
+      <div class="row">
+        <input
+          type="text "
+          placeholder="Digite o Login: naturopata"
+          id="login"
+        />
+      </div>
+      <div class="row">
+        <input
+          class="senha"
+          type="password"
+          placeholder="Digite a Senha"
+          id="senha"
+        />
+        <img
+          src="https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg"
+          class="btn"
+        />
+        <input type="submit" onclick="logar(); return false" value="Entrar" />
+      </div>
+      <div class="acesso">
+        <h6 style="font-size: 12.4px">
+          Solicite a Senha de Acesso com a Naturopata <br />Kátia Cristina
+        </h6>
+        <img
+          class="hand"
+          src="https://icon-library.com/images/icon-hand/icon-hand-12.jpg"
+          alt=""
+        />
+
+        <img
+          class=""
+          src="https://icon-library.com/images/icon-whats/icon-whats-12.jpg"
+          alt=""
+        />
+        <a class="whatsapp" href="https://wa.me/5581993469976" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+    </form>
+
+    <script>
+      function logar() {
+        var login = document.getElementById("login").value
+        var senha = document.getElementById("senha").value
+
+        if (login == "violao" && senha == "amancio") {
+          //alert("Sucesso")
+          location.href = "home.html"
+        } else {
+          alert("Usuario ou senha incorretos")
+        }
+      }
+
+      const senha = document.querySelector(".senha")
+      const btn = document.querySelector(".btn")
+
+      btn.onclick = () => {
+        if (senha.type === "password") {
+          senha.type = "text"
+          btn.src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SA14-A-zoRaiJ2GdUiESsisaFiHNYrUZtjtjZqnth0D_KdfkwzQWIdCjbzhAoYKPTvs&usqp=CAU"
+        } else {
+          senha.type = "password"
+          btn.src = "https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg"
+        }
+      }
+    </script>
+  </body>
 </html>
