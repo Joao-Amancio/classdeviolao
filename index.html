@@ -47,17 +47,22 @@
       body {
         display: flex;
         width: 100%;
-        height: 100vh;       
+        min-height: 100vh;
         justify-content: center;
-        align-items: center;       
-        overflow: hidden;
-        background-color: rgba(255, 228, 196, 0.253);
+        align-items: center;
+        background: var(--bg-url) no-repeat top center/cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
       }
 
-   
+      :root {
+        --bg-url: url(./assets/img10-mobile.png);
+      }
 
       form {
         width: 400px;
+        /*background: #ffffff56;*/
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -79,17 +84,16 @@
       }
 
       form input[type="submit"] {
-        background: rgba(255, 217, 0, 0.267);
-        color: rgb(131, 122, 122);
+        background: rgba(0, 128, 0, 0.452);
+        color: #fff;
         font-size: 18px;
-        font-weight: bold;
         border-color: black;
         cursor: pointer;
+        padding-right: 20px;
       }
-
       form input[type="submit"]:hover,
       form input[type="submit"]:focus {
-        background: rgba(218, 165, 32, 0.521);
+        background: rgb(35, 121, 63);
       }
 
       form .row img {
@@ -121,15 +125,55 @@
         height: 4px;
       }
 
-     
-      
+      .hand {
+        position: relative;
+        float: right;
+        left: -141px;
+        top: 34px;
+        height: 50px;
+        width: 40px;
+      }
+
+      .hand {
+        animation: bounce 2s infinite alternate;
+        -webkit-animation: bounce 2s infinite alternate;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-15px);
+        }
+      }
+
+      .whatsapp {
+        position: relative;
+        float: right;
+        left: -110px;
+        top: 1px;
+        font-size: 30px;
+        color: green;
+      }
+
+      h6 {
+        text-align: center;
+      }
 
       h3 {
         animation-duration: 3s;
         animation-name: slidein;
         color: rgb(17, 17, 17);
       }
-
 
       @keyframes slidein {
         from {
@@ -142,7 +186,7 @@
           width: 100%;
         }
       }
-
+   
       .login-container {
     display: flex;
     justify-content: center;
@@ -194,6 +238,7 @@
       }
 
       
+    </style>
 
 
 
