@@ -2,119 +2,218 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Login de Acesso para Plataforma Aulas de Violão</title>
+    <meta property="og:title" content="Plataforma - Vídeos Aulas de Violão" />
+    <meta
+      property="og:description"
+      content="Vídeos Aulas de Violão"
+    />
+    <meta property="og:url" content="https://joao-amancio.github.io/classdeviolao/" />
+    <meta
+      property="og:image"
+      content="https://joao-amancio.github.io/classdeviolao/assets/capa.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Outros metadados comuns -->
+    <meta
+      name="description"
+      content="Plataforma"
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Amancio" />
 
     <style>
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
         font-family: sans-serif;
+        box-sizing: border-box;
         outline: none;
       }
 
-      html, body {
+      body {
+        display: flex;
         width: 100%;
         height: 100vh;
-        display: flex;
+       
         justify-content: center;
         align-items: center;
+        background: var(--bg-url) no-repeat top center/cover;
         overflow: hidden;
-        background: url(./assets/fundo.JPG) no-repeat center center;
-        background-size: 100% auto; /* 50% da largura, altura automática */
-        background-size: 495px 600px; /* Largura fixa de 300px e altura de 200px */
       }
 
-      .login-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 400px;
-        background: rgba(236, 161, 111, 0.37);
-        padding: 30px;
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-      }
-
-      .logo {
-        width: 200px;
-        margin-bottom: 15px;
-        border-radius: 10px;
-        border: 2px solid goldenrod;
+      :root {
+        --bg-url: url(./assets/fundo.JPG);
       }
 
       form {
-        width: 100%;
-        text-align: center;
+        width: 400px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       }
 
-      .row {
-        margin: 15px 0;
+      form .row {
         position: relative;
+        margin: 20px 0;
       }
 
-      /* Ajuste no input de senha para que o ícone fique dentro dele */
-      input {
+      form input {
+        display: block;
+        margin: 10px auto;
         width: 100%;
         height: 40px;
         border-radius: 20px;
-        padding-left: 15px; 
+        padding-left: 20px;
         border: 1px solid gold;
-       /* padding-right: 45px; /* Adicionando espaço interno para o ícone */
       }
 
-      input[type="submit"] {
-        background: rgba(255, 217, 0, 0.7);
+      form input[type="submit"] {
+        background: rgba(255, 217, 0, 0.267);
         color: #fff;
         font-size: 18px;
-        border: none;
+        border-color: black;
         cursor: pointer;
       }
 
-      input[type="submit"]:hover {
-        background: rgba(218, 165, 32, 0.7);
+      form input[type="submit"]:hover,
+      form input[type="submit"]:focus {
+        background: rgba(218, 165, 32, 0.521);
       }
 
-      /* Criando um contêiner para o input e o ícone do olho */
+      form .row img {
+        position: absolute;
+        top: 23%;
+        right: 55px;
+        color: #555;
+        transform: translateY(-50%);
+        opacity: 0.5;
+      }
+
+      form .row img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      h3 {
+        left: 50px;
+        position: relative;
+        font-size: 30px;
+        color: rgb(1, 37, 10);
+      }
+
+      form h3 :before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+      }
+
+     
+      
+
+      h3 {
+        animation-duration: 3s;
+        animation-name: slidein;
+        color: rgb(17, 17, 17);
+      }
+
+
+      @keyframes slidein {
+        from {
+          margin-left: 50%;
+          width: 100%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+
+      .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: rgba(236, 161, 111, 0.37);
+}
+
+.login-box {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    
+}
+
+
+
+
       .password-container {
         position: relative;
-        width: 100%;
       }
 
-      /* Posicionando o ícone dentro do campo de senha */
-      .toggle-password {
+      .password-container input {
+        width: 100%;
+        padding-right: 50px;
+      }
+
+      .password-container .toggle-password {
         position: absolute;
-        right: -150px; /* Distância do canto direito */
-        top: 50%;
+        left: 280px;
+        top: 40%;
         transform: translateY(-50%);
-        font-size: 20px;
+        font-size: 30px;
         color: #555;
         cursor: pointer;
       }
-
     </style>
   </head>
   <body>
-    <div class="login-container">
-      <img src="./assets/capa.png" alt="Logo" class="logo" />
-      <form>
-        <h3>Login:</h3>
-        <div class="row">
-          <input type="text" placeholder="Digite o Login: violao" id="login" />
+    <form>
+      <div class="login-container">
+        <div class="login-box">
+          <img src="./assets/capa.png" alt="Logo" class="logo" />
         </div>
-        <div class="row password-container">
-          <input type="password" placeholder="Digite a Senha" id="senha" />
-          <i class="fa fa-eye toggle-password" id="togglePassword"></i>
-        </div>
-        <input type="submit" onclick="logar(); return false" value="Entrar" />
-      </form>
-    </div>
+      </div>
+      <br />
+      <h3>Login:</h3>
+      <div class="row">
+        <input type="text" placeholder="Digite o Login: violao" id="login" />
+      </div>
+      <div class="row password-container">
+        <input class="senha" type="password" placeholder="Digite a Senha" id="senha" />
+        <i class="fa fa-eye toggle-password" id="togglePassword"></i>
+      </div>
+      <input type="submit" onclick="logar(); return false" value="Entrar" />
+    </form>
 
     <script>
       function logar() {
@@ -128,19 +227,18 @@
         }
       }
 
-      // Lógica para alternar a visibilidade da senha
       const senhaInput = document.getElementById("senha");
-      const togglePasswordIcon = document.getElementById("togglePassword");
+      const togglePassword = document.getElementById("togglePassword");
 
-      togglePasswordIcon.addEventListener("click", () => {
+      togglePassword.addEventListener("click", () => {
         if (senhaInput.type === "password") {
           senhaInput.type = "text";
-          togglePasswordIcon.classList.remove("fa-eye");
-          togglePasswordIcon.classList.add("fa-eye-slash");
+          togglePassword.classList.remove("fa-eye");
+          togglePassword.classList.add("fa-eye-slash");
         } else {
           senhaInput.type = "password";
-          togglePasswordIcon.classList.remove("fa-eye-slash");
-          togglePasswordIcon.classList.add("fa-eye");
+          togglePassword.classList.remove("fa-eye-slash");
+          togglePassword.classList.add("fa-eye");
         }
       });
     </script>
