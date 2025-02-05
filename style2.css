@@ -181,7 +181,7 @@ width: 90%;
             margin-top: 20px;
             color: rgb(70, 59, 59);
             text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
-            border: 2px solid red;
+            
             
         }
 
@@ -190,8 +190,9 @@ width: 90%;
           width: 100%;
           padding: 20px;
           margin: 0 auto;
-         
-      }
+          width: 90%; /* Evita que fique muito largo no mobile */
+          max-width: 600px; /* Define um limite de largura */
+        }
 
             .descricao h2 {
                 font-size: 20px;
