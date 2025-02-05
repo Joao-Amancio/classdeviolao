@@ -188,7 +188,7 @@ width: 90%;
             @media (max-width: 767px) {
               h1 {
                   text-align: center;
-                  font-size: 30px;
+                  font-size: 6vw; /* Adapta o tamanho à largura da tela */
                   margin-top: 20px;
                   color: rgb(70, 59, 59);
                   text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
