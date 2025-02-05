@@ -188,17 +188,18 @@ width: 90%;
             @media (max-width: 767px) {
               h1 {
                   text-align: center;
-                  font-size: 6vw; /* Adapta o tamanho à tela */
+                  font-size: 6vw;
                   margin-top: 20px;
                   color: rgb(70, 59, 59);
                   text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
-                  max-width: 100vw; /* Garante que não ultrapasse a tela */
-                  white-space: nowrap; /* Evita quebra de linha */
-                  overflow: hidden; /* Evita scroll horizontal */
-                  text-overflow: ellipsis; /* Adiciona "..." caso o texto ultrapasse */
-                  letter-spacing: 2px; /* Expande um pouco as letras */
+                  max-width: 90vw; /* Ajuste para evitar cortes em bordas */
+                  padding: 0 5vw; /* Espaçamento lateral */
+                  white-space: normal; /* Permite quebra de linha */
+                  overflow-wrap: break-word; /* Quebra palavras grandes */
+                  letter-spacing: 2px;
               }
           }
+          
           
 
         .container {
