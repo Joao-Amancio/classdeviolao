@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <title>
-      Login de Acesso para a Ficha de Cadastro e Anamnese | Kátia Cristina |
-      Terapeuta Naturopata
-    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Login de Acesso para Plataforma Aulas de Violão</title>
 
     <style>
       * {
@@ -29,18 +30,14 @@
         justify-content: center;
         align-items: center;
         background: var(--bg-url) no-repeat top center/cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
       }
 
       :root {
-        --bg-url: url(./assets/img10-mobile.png);
+        --bg-url: url(./assets/fundo.JPG);
       }
 
       form {
         width: 400px;
-        /*background: #ffffff56;*/
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -54,24 +51,24 @@
       form input {
         display: block;
         margin: 10px auto;
-        width: 250px;
+        width: 100%;
         height: 40px;
         border-radius: 20px;
         padding-left: 20px;
-        border: 1px solid green;
+        border: 1px solid gold;
       }
 
       form input[type="submit"] {
-        background: rgba(0, 128, 0, 0.452);
+        background: rgba(255, 217, 0, 0.267);
         color: #fff;
         font-size: 18px;
         border-color: black;
         cursor: pointer;
-        padding-right: 20px;
       }
+
       form input[type="submit"]:hover,
       form input[type="submit"]:focus {
-        background: rgb(35, 121, 63);
+        background: rgba(218, 165, 32, 0.521);
       }
 
       form .row img {
@@ -103,55 +100,15 @@
         height: 4px;
       }
 
-      .hand {
-        position: relative;
-        float: right;
-        left: -141px;
-        top: 34px;
-        height: 50px;
-        width: 40px;
-      }
-
-      .hand {
-        animation: bounce 2s infinite alternate;
-        -webkit-animation: bounce 2s infinite alternate;
-      }
-
-      @keyframes bounce {
-        from {
-          transform: translateY(0px);
-        }
-        to {
-          transform: translateY(-15px);
-        }
-      }
-      @-webkit-keyframes bounce {
-        from {
-          transform: translateY(0px);
-        }
-        to {
-          transform: translateY(-15px);
-        }
-      }
-
-      .whatsapp {
-        position: relative;
-        float: right;
-        left: -110px;
-        top: 1px;
-        font-size: 30px;
-        color: green;
-      }
-
-      h6 {
-        text-align: center;
-      }
+     
+      
 
       h3 {
         animation-duration: 3s;
         animation-name: slidein;
         color: rgb(17, 17, 17);
       }
+
 
       @keyframes slidein {
         from {
@@ -164,78 +121,103 @@
           width: 100%;
         }
       }
+
+      .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: rgba(236, 161, 111, 0.37);
+}
+
+.login-box {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    
+}
+
+
+
+
+      .password-container {
+        position: relative;
+      }
+
+      .password-container input {
+        width: 100%;
+        padding-right: 50px;
+      }
+
+      .password-container .toggle-password {
+        position: absolute;
+        left: 280px;
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #555;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <form>
+      <div class="login-container">
+        <div class="login-box">
+          <img src="./assets/capa.png" alt="Logo" class="logo" />
+        </div>
+      </div>
+      <br />
       <h3>Login:</h3>
       <div class="row">
-        <input
-          type="text "
-          placeholder="Digite o Login: naturopata"
-          id="login"
-        />
+        <input type="text" placeholder="Digite o Login: violao" id="login" />
       </div>
-      <div class="row">
-        <input
-          class="senha"
-          type="password"
-          placeholder="Digite a Senha"
-          id="senha"
-        />
-        <img
-          src="https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg"
-          class="btn"
-        />
-        <input type="submit" onclick="logar(); return false" value="Entrar" />
+      <div class="row password-container">
+        <input class="senha" type="password" placeholder="Digite a Senha" id="senha" />
+        <i class="fa fa-eye toggle-password" id="togglePassword"></i>
       </div>
-      <div class="acesso">
-        <h6 style="font-size: 12.4px">
-          Solicite a Senha de Acesso com a Naturopata <br />Kátia Cristina
-        </h6>
-        <img
-          class="hand"
-          src="https://icon-library.com/images/icon-hand/icon-hand-12.jpg"
-          alt=""
-        />
-
-        <img
-          class=""
-          src="https://icon-library.com/images/icon-whats/icon-whats-12.jpg"
-          alt=""
-        />
-        <a class="whatsapp" href="https://wa.me/5581993469976" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-      </div>
+      <input type="submit" onclick="logar(); return false" value="Entrar" />
     </form>
 
     <script>
       function logar() {
-        var login = document.getElementById("login").value
-        var senha = document.getElementById("senha").value
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
 
-        if (login == "violao" && senha == "amancio") {
-          //alert("Sucesso")
-          location.href = "home.html"
+        if (login === "violao" && senha === "amancio") {
+          location.href = "home.html";
         } else {
-          alert("Usuario ou senha incorretos")
+          alert("Usuário ou senha incorretos");
         }
       }
 
-      const senha = document.querySelector(".senha")
-      const btn = document.querySelector(".btn")
+      const senhaInput = document.getElementById("senha");
+      const togglePassword = document.getElementById("togglePassword");
 
-      btn.onclick = () => {
-        if (senha.type === "password") {
-          senha.type = "text"
-          btn.src =
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8SA14-A-zoRaiJ2GdUiESsisaFiHNYrUZtjtjZqnth0D_KdfkwzQWIdCjbzhAoYKPTvs&usqp=CAU"
+      togglePassword.addEventListener("click", () => {
+        if (senhaInput.type === "password") {
+          senhaInput.type = "text";
+          togglePassword.classList.remove("fa-eye");
+          togglePassword.classList.add("fa-eye-slash");
         } else {
-          senha.type = "password"
-          btn.src = "https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg"
+          senhaInput.type = "password";
+          togglePassword.classList.remove("fa-eye-slash");
+          togglePassword.classList.add("fa-eye");
         }
-      }
+      });
     </script>
   </body>
 </html>
