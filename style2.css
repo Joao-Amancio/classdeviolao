@@ -181,7 +181,17 @@ width: 90%;
             margin-top: 20px;
             color: rgb(70, 59, 59);
             text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
+            border: 2px solid red;
+            
         }
+
+        .container {
+          max-width: 1200px;
+          width: 100%;
+          padding: 20px;
+          margin: 0 auto;
+         
+      }
 
             .descricao h2 {
                 font-size: 20px;
