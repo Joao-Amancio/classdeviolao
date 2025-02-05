@@ -197,42 +197,154 @@
 
       @media (max-width: 480px) {
         body {
-          display: flex;
+        display: flex;
+        width: 100%;
+        height: 100vh;       
+        justify-content: center;
+        align-items: center;
+        background: var(--bg-url) no-repeat top center/cover;
+        overflow: hidden;
+      }
+
+      :root {
+        --bg-url: url(./assets/fundo.JPG);
+      }
+
+      form {
+        width: 400px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      form .row {
+        position: relative;
+        margin: 20px 0;
+      }
+
+      form input {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 20px;
+        border: 1px solid gold;
+      }
+
+      form input[type="submit"] {
+        background: rgba(255, 217, 0, 0.267);
+        color: #fff;
+        font-size: 18px;
+        border-color: black;
+        cursor: pointer;
+      }
+
+      form input[type="submit"]:hover,
+      form input[type="submit"]:focus {
+        background: rgba(218, 165, 32, 0.521);
+      }
+
+      form .row img {
+        position: absolute;
+        top: 23%;
+        right: 55px;
+        color: #555;
+        transform: translateY(-50%);
+        opacity: 0.5;
+      }
+
+      form .row img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      h3 {
+        left: 50px;
+        position: relative;
+        font-size: 30px;
+        color: rgb(1, 37, 10);
+      }
+
+      form h3 :before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+      }
+
+     
+      
+
+      h3 {
+        animation-duration: 3s;
+        animation-name: slidein;
+        color: rgb(17, 17, 17);
+      }
+
+
+      @keyframes slidein {
+        from {
+          margin-left: 50%;
           width: 100%;
-          height: 100vh;       
-          justify-content: center;
-          align-items: center;
-          padding: 20px;
-          overflow: hidden;
         }
 
-        form {
+        to {
+          margin-left: 0%;
           width: 100%;
-          padding: 20px;
-          box-shadow: none;
-          border-radius: 5px;
         }
+      }
 
-        h3 {
-          font-size: 24px;
-          left: 0;
-          text-align: center;
-        }
+      .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: rgba(236, 161, 111, 0.37);
+}
 
-        .login-container {
-          width: 100%;
-          padding: 20px;
-          border-radius: 5px;
-        }
+.login-box {
+    width: 100%;
+    text-align: center;
+    
+}
 
-        .logo {
-          width: 200px;
-        }
+.logo {
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid goldenrod;
+    
+}
 
-        .password-container .toggle-password {
-          left: 85%;
-          font-size: 20px;
-        }
+
+
+
+      .password-container {
+        position: relative;
+      }
+
+      .password-container input {
+        width: 100%;
+        padding-right: 50px;
+      }
+
+      .password-container .toggle-password {
+        position: absolute;
+        left: 280px;
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #555;
+        cursor: pointer;
+      }
       }
 
 
