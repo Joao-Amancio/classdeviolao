@@ -47,17 +47,14 @@
       body {
         display: flex;
         width: 100%;
-        height: 100vh;
-       
+        height: 100vh;       
         justify-content: center;
-        align-items: center;
-        background: var(--bg-url) no-repeat top center/cover;
+        align-items: center;       
         overflow: hidden;
+        background-color: rgba(255, 228, 196, 0.253);
       }
 
-      :root {
-        --bg-url: url(./assets/fundo.JPG);
-      }
+   
 
       form {
         width: 400px;
@@ -83,8 +80,9 @@
 
       form input[type="submit"] {
         background: rgba(255, 217, 0, 0.267);
-        color: #fff;
+        color: rgb(131, 122, 122);
         font-size: 18px;
+        font-weight: bold;
         border-color: black;
         cursor: pointer;
       }
@@ -195,55 +193,7 @@
         cursor: pointer;
       }
 
-      @media (max-width: 480px) {
-        body {
-          padding: 0;
-          height: 100vh;
-          width: 100vw;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-
-        form {
-          width: 90%;
-          max-width: 350px;
-          padding: 20px;
-          box-shadow: none;
-          border-radius: 5px;
-          background: rgba(255, 255, 255, 0.9);
-        }
-
-        h3 {
-          font-size: 24px;
-          left: 0;
-          text-align: center;
-        }
-
-        .login-container {
-          width: 100%;
-          max-width: 400px;
-          padding: 20px;
-          border-radius: 5px;
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-        .logo {
-          width: 180px;
-        }
-
-        .password-container .toggle-password {
-          right: 10px;
-          font-size: 20px;
-        }
-      }
+      
 
 
 
