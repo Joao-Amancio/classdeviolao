@@ -62,18 +62,28 @@ width: 90%;
 
         .search-icon {
             font-size: 20px;
-            color: #555;
+            color: rgb(10, 10, 10);
             margin-right: 10px;
         }
 
         #searchInput {
             width: 100%;
-            max-width: 300px;
+            max-width: 600px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 20px;
             font-size: 16px;
+           
         }
+
+        /* Aumenta a largura no mobile */
+@media (max-width: 768px) {
+  #searchInput {
+      width: 100%; /* Ocupa 90% da largura da tela */
+      max-width: none;
+     
+  }
+}
 
         .video-wrapper {
             display: flex;
@@ -175,15 +185,21 @@ width: 90%;
                 gap: 60px; /* Reduz o espaço entre os vídeos no mobile */
             }
 
-            h1 {
-            text-align: center;
-            font-size: 30px;
-            margin-top: 20px;
-            color: rgb(70, 59, 59);
-            text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
-            width: 100%;
-            
-        }
+            @media (max-width: 767px) {
+              h1 {
+                  text-align: center;
+                  font-size: 30px;
+                  margin-top: 20px;
+                  color: rgb(70, 59, 59);
+                  text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
+                  width: 100%;
+                  white-space: nowrap; /* Impede a quebra de linha */
+                  overflow: hidden; /* Evita que o texto transborde */
+                  text-overflow: ellipsis; /* Adiciona "..." caso o texto ultrapasse o limite */
+                  letter-spacing: 2px; /* Expande um pouco as letras */
+              }
+          }
+          
 
         .container {
           max-width: 1200px;
