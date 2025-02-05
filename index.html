@@ -47,13 +47,14 @@
       body {
         display: flex;
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         background: var(--bg-url) no-repeat top center/cover;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        overflow: hidden;
       }
 
       :root {
@@ -66,6 +67,7 @@
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        
       }
 
       form .row {
@@ -199,6 +201,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     background: rgba(236, 161, 111, 0.37);
+   
 }
 
 .login-box {   
