@@ -197,19 +197,25 @@
 
       @media (max-width: 480px) {
         body {
-          padding: 20px;
+          padding: 0;
           height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
           align-items: center;
           overflow: hidden;
           background-size: cover;
           background-position: center;
+          background-repeat: no-repeat;
         }
 
         form {
-          width: 100%;
+          width: 90%;
+          max-width: 350px;
           padding: 20px;
           box-shadow: none;
           border-radius: 5px;
+          background: rgba(255, 255, 255, 0.9);
         }
 
         h3 {
@@ -220,23 +226,25 @@
 
         .login-container {
           width: 100%;
+          max-width: 400px;
           padding: 20px;
           border-radius: 5px;
-          position: absolute;
+          position: fixed;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
         }
 
         .logo {
-          width: 200px;
+          width: 180px;
         }
 
         .password-container .toggle-password {
-          left: 85%;
+          right: 10px;
           font-size: 20px;
         }
       }
+
 
 
 
