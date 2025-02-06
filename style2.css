@@ -185,67 +185,77 @@ width: 90%;
                 gap: 60px; /* Reduz o espaço entre os vídeos no mobile */
             }
 
-            @media (max-width: 767px) {
-              h1 {
-                  text-align: center;
-                  font-size: 6vw;
-                  margin-top: 20px;
-                  color: rgb(70, 59, 59);
-                  text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
-                  max-width: 90vw; /* Ajuste para evitar cortes em bordas */
-                  padding: 0 5vw; /* Espaçamento lateral */
-                  white-space: normal; /* Permite quebra de linha */
-                  overflow-wrap: break-word; /* Quebra palavras grandes */
-                  letter-spacing: 2px;
-              }
           }
-          
-          
 
-        .container {
-          max-width: 1200px;
-          width: 100%;
-          padding: 20px; 
-          margin: 0 auto;
-          width: 90%; /* Evita que fique muito largo no mobile */
-          max-width: 1000px; /* Define um limite de largura */
-        }
-
+          @media (max-width: 767px) {
+            h1 {
+                text-align: center;
+                font-size: 6vw;
+                margin-top: 20px;
+                color: rgb(70, 59, 59);
+                text-shadow: 2px 2px 5px rgba(197, 250, 6, 0.5);
+                max-width: 90vw;
+                padding: 0 5vw;
+                white-space: normal;
+                overflow-wrap: break-word;
+                letter-spacing: 2px;
+            }
+        
+            .container {
+                max-width: 1000px;
+                width: 90%;
+                padding: 20px;
+                margin: 0 auto;
+            }
+        
             .descricao h2 {
                 font-size: 20px;
             }
-
+        
             .descricao p {
                 font-size: 18px;
             }
-
+        
             .pdf-button {
                 font-size: 14px;
                 padding: 8px 16px;
             }
-
-            /* Centraliza a caixa de descrição para dispositivos móveis */
+        
+            /* Ajuste para centralizar a caixa de descrição */
             .descricao {
-                
-                width: 120%;
-                max-width: 150%;
-                box-sizing: border-box;
-            }
-
-            /* Centraliza o campo de pesquisa */
-            .search-bar {
                 width: 100%;
-                justify-content: center;
+                max-width: 100%;
+                box-sizing: border-box;
+                text-align: center;
             }
-
+        
+            /* Centraliza e ajusta a largura do campo de pesquisa */
+            .search-bar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0 10px; /* Pequeno espaçamento lateral */
+            }
+        
             #searchInput {
                 width: 100%;
-                max-width: 280px; /* Tamanho do campo de busca */
+                max-width: none; /* Remove limite de largura */
+                padding: 12px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                box-sizing: border-box;
             }
         }
+        
+        
+
+          
+   
 
         footer {
-            color: rgb(10, 10, 10);
+            color: rgb(24, 23, 23);
             text-align: center;
         }
 
