@@ -2,6 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -541,7 +544,13 @@ footer {
     background: none;
     margin-bottom: -100px;
   }
-  
+
+
+  @media (max-width: 768px) {
+    .conteudo {
+        padding: 0 ;  /* Adicione um pouco de espaçamento nas laterais em telas pequenas */
+    }
+}
 
 
 
