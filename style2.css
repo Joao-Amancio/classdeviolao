@@ -227,8 +227,7 @@ width: 100%;
             .search-bar {
               width: 120%;
               margin: auto 0 ;
-              margin-left: -30px;
-              
+              margin-left: -30px;              
               position: relative; /* Necessário para o ícone ficar dentro do campo */
               display: flex;
               justify-content: center;
