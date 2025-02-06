@@ -132,7 +132,7 @@ width: 100%;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(250, 248, 248, 0.932);
             width: 100%;
-            max-width: 150%;
+            max-width: 250%;
         }
 
         .descricao h2 {
@@ -498,9 +498,9 @@ margin-top: 20px;
 
 footer {
     font-weight: bold;
-    border: solid 2px rgba(68, 68, 64, 0.462);
+    border: solid 3px rgba(68, 68, 64, 0.462);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(214, 214, 214, 0.2);
+    box-shadow: 0 4px 8px rgba(8, 8, 8, 0.733);
   }
   
   footer,

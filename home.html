@@ -51,9 +51,14 @@
            
         <br>
                 <div class="video-wrapper">
+                    
+                    <!-- Video 1 -->
+                    <div class="video-container fade-in" id="video1">
+                        <!-- O iframe será carregado via JavaScript -->
+                    </div>
                     <div class="descricao fade-in" data-title="Aula 1">
                         <h2>Aula 1</h2>
-                        <p style="font-family: cursive; color:rgb(100, 85, 85);">Seja muito Bem-vindo(a) ao curso de violão! Espero que você aproveite bem essa jornada! 
+                        <p style="font-family: cursive; color:rgb(100, 85, 85); font-size: 20px;">Seja muito Bem-vindo(a) ao curso de violão! Espero que você aproveite bem essa jornada! 
                             Esta primeira aula é um vídeo de apresentação e boas vindas. Para cada video aula teremos
                             um pdf pra baixar. <br> <details style="font-family: cursive; color:rgb(100, 85, 85)"> <summary> 🎸 "Aprender violão é uma jornada incrível,... </summary>  
                             e cada acorde que você aprende te leva mais perto de tocar as músicas 
@@ -66,11 +71,6 @@
                         </p>
                     
                     </div>
-                    <!-- Video 1 -->
-                    <div class="video-container fade-in" id="video1">
-                        <!-- O iframe será carregado via JavaScript -->
-                    </div>
-                    
                  
                     <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
 
@@ -416,10 +416,27 @@ if (typingContainer && typingText) {
 
 
             </script>
+    <script>
+    // Função de pesquisa para filtrar as aulas
+    document.getElementById('searchInput').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase(); // Pega o termo da pesquisa e transforma para minúsculas
+        const aulas = document.querySelectorAll('.descricao'); // Seleciona todos os elementos com a classe .descricao
+        const separadores = document.querySelectorAll('.separator'); // Seleciona todos os elementos <hr> com a classe .separator
     
+        aulas.forEach(function(aula, index) {
+            const title = aula.querySelector('h2').textContent.toLowerCase(); // Pega o título da aula
     
-  
-
+            // Verifica se o título contém o termo de pesquisa
+            if (title.includes(searchTerm)) {
+                aula.style.display = ''; // Exibe a aula
+                separadores[index].style.display = ''; // Exibe o <hr> correspondente
+            } else {
+                aula.style.display = 'none'; // Oculta a aula
+                separadores[index].style.display = 'none'; // Oculta o <hr> correspondente
+            }
+        });
+    });
+</script>
          
             </body>
           <br><br><br><br><br><br>
