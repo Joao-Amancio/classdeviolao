@@ -34,6 +34,7 @@ width: 100%;
 }
 
 .separator {
+  margin: 0;
   border: 0;
   border-top: 3px solid #333; /* Espessura e cor do traço */
   width: 100%; /* Garante que o traço ocupe toda a largura disponível */
@@ -178,6 +179,7 @@ width: 100%;
                 grid-template-columns: 1fr; /* 1 vídeo por linha */
                 justify-items: center; /* Centraliza os vídeos */
                 gap: 60px; /* Reduz o espaço entre os vídeos no mobile */
+                width: 100%;
             }
 
           }
@@ -207,10 +209,41 @@ width: 100%;
         
             /* Ajuste para centralizar a caixa de descrição */
             .descricao {
-                width: 100%;
-                max-width: 100%;
+                width: 125%;
+                max-width: 600%;
                 box-sizing: border-box;
                 text-align: center;
+            }
+
+            .separator {
+              margin: 0;
+              border: 0;
+              border-top: 3px solid #333; /* Espessura e cor do traço */
+              width: 125%; /* Garante que o traço ocupe toda a largura disponível */
+              margin: 20px 0; /* Espaçamento em cima e embaixo */
+              clear: both; /* Garante que o traço não seja afetado por elementos flutuantes */
+            }
+
+            .search-bar {
+              width: 120%;
+              margin: auto 0 ;
+              margin-left: -30px;
+              
+              position: relative; /* Necessário para o ícone ficar dentro do campo */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 20px;
+            }
+
+
+            #searchInput {
+             
+              max-width: 600px;
+              padding: 10px 10px 10px 30px; /* Adiciona padding à esquerda para o ícone */
+              border: 1px solid rgb(252, 248, 248);
+              border-radius: 20px;
+              font-size: 16px;
             }
                     
         
@@ -498,7 +531,7 @@ margin-top: 20px;
 
 footer {
     font-weight: bold;
-    border: solid 3px rgba(68, 68, 64, 0.462);
+    border: solid 4px rgba(68, 68, 64, 0.462);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(8, 8, 8, 0.733);
   }
