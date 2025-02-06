@@ -67,10 +67,13 @@ width: 90%;
         }
 
         #searchInput {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             max-width: 600px;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid rgb(247, 13, 13);
             border-radius: 20px;
             font-size: 16px;
            
