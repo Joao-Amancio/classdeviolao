@@ -224,7 +224,7 @@ width: 100%;
                 display: block;
                 justify-content: center;
                 align-items: center;
-                width: 125%;
+                width: 100%;
                 max-width: 600%;
                 box-sizing: border-box;
                 text-align: center;
@@ -240,9 +240,9 @@ width: 100%;
             }
 
             .search-bar {
-              width: 120%;
+              width: 100%;
               margin: auto 0 ;
-              margin-left: -30px;              
+                            
               position: relative; /* Necessário para o ícone ficar dentro do campo */
               display: flex;
               justify-content: center;
@@ -252,7 +252,7 @@ width: 100%;
 
 
             #searchInput {
-              margin-left: -15px;
+             
               width: 120%;
               max-width: 600px;
               padding: 10px 10px 10px 48px; /* Adiciona padding à esquerda para o ícone */
@@ -479,10 +479,17 @@ margin-top: 20px;
 }
 
 
-
+/* ESTOU MEXENDO AQUI */
 
 
 @media (max-width: 930px) {
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .img-box {
       display: none;
     }
@@ -493,9 +500,18 @@ margin-top: 20px;
   
    
     .form-box {
-      width: 100%;
+    
+      width: 100%;   
       border-radius: 0;
     }
+
+    .container {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+
+   
   }
   
 
