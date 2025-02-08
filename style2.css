@@ -22,6 +22,15 @@ html, body {
             width: 100%;
         }
 
+        .separator {
+          margin: 0;
+          border: 0;
+          border-top: 3px solid #333; /* Espessura e cor do traço */
+          width: 125%; /* Garante que o traço ocupe toda a largura disponível */
+          margin: 20px 0; /* Espaçamento em cima e embaixo */
+          clear: both; /* Garante que o traço não seja afetado por elementos flutuantes */
+        }
+
         @media screen and (max-width: 600px) {
 .container {
 width: 100%;
@@ -192,7 +201,7 @@ width: 100%;
         
             .container {
                 max-width: 1000px;
-                width: 90%;
+                width: 100%;
                 padding: 20px;
                 margin: 0 auto;
             }
@@ -212,6 +221,9 @@ width: 100%;
         
             /* Ajuste para centralizar a caixa de descrição */
             .descricao {
+                display: block;
+                justify-content: center;
+                align-items: center;
                 width: 125%;
                 max-width: 600%;
                 box-sizing: border-box;
@@ -266,6 +278,13 @@ width: 100%;
 
             .separator {
               border-top: 3px solid goldenrod; /* Espessura e cor do traço */
+             
+            }
+
+            .video-wrapper {
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
                     
         
