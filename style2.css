@@ -12,7 +12,12 @@ html, body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: rgba(236, 161, 111, 0.37);                            
+           /* background-color: rgba(236, 161, 111, 0.37);  */   
+            background-image: url('./assets/fundo.JPG'); /* Caminho da imagem */
+            background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */                       
             display: flex;
             justify-content: center;
             align-items: center;
@@ -297,7 +302,7 @@ width: 100%;
    
 
         footer {
-            color: rgb(83, 82, 82);
+            color: rgb(241, 238, 238);
             text-align: center;
         }
 
@@ -465,7 +470,7 @@ margin-top: 20px;
 }
 
 .form-box {
-    background-color: rgba(177, 161, 22, 0.178);  
+    background-color: rgba(177, 161, 22, 0.342);  
     /*backdrop-filter: blur(40px);*/
     padding: 30px 40px;
     width: 50%;
