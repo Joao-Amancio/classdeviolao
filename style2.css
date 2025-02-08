@@ -248,6 +248,25 @@ width: 100%;
               border-radius: 20px;
               font-size: 16px;
             }
+
+            
+
+            body {
+              background: rgb(10, 10, 10);
+              
+            }
+
+            .container {  
+ 
+              
+              margin: 0 ;
+              width: 90%; /* Evita que fique muito largo no mobile */
+              max-width: 1200px; /* Define um limite de largura */
+            }
+
+            .separator {
+              border-top: 3px solid goldenrod; /* Espessura e cor do traço */
+            }
                     
         
   
@@ -259,11 +278,12 @@ width: 100%;
    
 
         footer {
-            color: rgb(24, 23, 23);
+            color: rgb(83, 82, 82);
             text-align: center;
         }
 
         #social-links {
+      padding-top: 20px;
       display: flex;
       justify-content: center;
       gap: 10px;
@@ -271,6 +291,7 @@ width: 100%;
     }
 
     #social-links a {
+      
       display: flex;
       align-items: center;
       justify-content: center;
