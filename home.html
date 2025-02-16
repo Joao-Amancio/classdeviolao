@@ -6,10 +6,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style2.css">
     <title>Aulas de Violão</title>
+    <style>
+/* Estilos gerais */
+/* Ícone do menu para mobile */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #af921f;
+  color: white;
+  border-radius: 20px;
+  width: 100%; 
+  box-sizing: border-box; 
+  
+}
+
+
+
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ffcc00;
+}
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.menu-icon div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Ícone "X" para fechar o menu */
+.close-icon {
+  display: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: #ffcc00;
+}
+
+/* Quando o menu está aberto, mostra o "X" */
+.menu.active ~ .menu-icon .close-icon {
+  display: block;
+}
+
+/* Esconde as barras do hambúrguer quando o menu está aberto */
+.menu.active ~ .menu-icon div {
+  display: none;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+
+  /* Definindo o menu inicialmente escondido acima da tela */
+.menu {
+  position: fixed;
+  top: -100%; /* Inicialmente escondido */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo do menu */
+  padding: 20px;
+  transition: top 0.3s ease-in-out; /* Transição suave */
+  z-index: 1;
+}
+
+/* Quando o menu está aberto */
+.menu.active {
+  top: 0; /* Menu desliza para baixo */
+}
+
+
+  
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu ul li {
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+
+       h1 {
+        text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(253, 251, 251);
+   /* margin-top: 30px;
+    margin-bottom: 20px; */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7); 
+       } 
+    
+       .novas-aulas {
+    font-size: 18px;
+    font-family: cursive;
+    color: rgb(247, 246, 242);
+    text-align: center;
+    margin: 20px 0;
+    animation: pulse 2s infinite; /* Animação infinita */
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.8; /* Começa com opacidade menor */
+      transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+      opacity: 1; /* Fica totalmente visível */
+      transform: scale(1.1); /* Aumenta o tamanho */
+    }
+    100% {
+      opacity: 0.8; /* Retorna à opacidade inicial */
+      transform: scale(1); /* Retorna ao tamanho original */
+    }
+  }
+    </style>
 
        </head>
 <body>
-
+    
     
   
     <div class="box">
@@ -40,19 +209,38 @@
 
 
             <div class="container conteudo">
-               <!--<h1>PLATAFORMA DE VÍDEOS</h1>--> 
-        
-                <!-- Barra de Pesquisa -->
-                
-                <div class="search-bar">
-                    <span class="search-icon">🔍</span> <!-- Ícone de pesquisa -->
-                    <input type="text" id="searchInput" placeholder="Pesquise a Aula que Deseja Assistir...">
-                </div>
-           
+                <div class="header">
+                    <div class="logo" style="text-align: center">PROF. AMANCIO</div>
+                    <div class="menu-icon" id="menu-icon">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span class="close-icon">X</span> <!-- Ícone de fechar -->
+                    </div>
+                    <nav class="menu" id="menu">
+                      <ul>
+                        <li><a href="#modulo1">MÓDULO 1 </a></li> 
+                        <li><a href="#modulo2">MÓDULO 2</a></li>
+                        <li><a href="#modulo3">MÓDULO 3</a></li>
+                        
+                      </ul>
+                    </nav>
+                  </div>
         <br>
+                <!-- Barra de Pesquisa -->
+             <!--<div class="search-bar">
+                    <span class="search-icon">🔍</span> 
+                    <input type="text" id="searchInput" placeholder="Pesquise a Aula que Deseja Assistir...">
+                </div>-->    
+                 
+            
+                <p class="novas-aulas">Novas aulas toda semana!</p>
+       
                 <div class="video-wrapper">
                     
+                    <section id="modulo1">
                     <!-- Video 1 -->
+                    <h1> MÓDULO 1</h1>
                     <div class="video-container fade-in" id="video1">
                         <!-- O iframe será carregado via JavaScript -->
                     </div>
@@ -71,8 +259,8 @@
                         </p>
                     
                     </div>
-                 
-                    <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                 <br><br>
+                <hr class="separator"> <br><br>   
 
                     <!-- Video 2 -->
                     <div class="video-container fade-in" id="video2">
@@ -87,7 +275,8 @@
                       </button>
         
                     </div>
-                    <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                    <br><br>
+                    <hr class="separator"> <br><br>
                     <!-- Video 3 -->
                     <div class="video-container fade-in" id="video3">
                         <!-- O iframe será carregado via JavaScript -->
@@ -102,7 +291,10 @@
                           </button>
             
                     </div>
-                    <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                    <br><br>
+                    <hr class="separator"> <br><br>
+                
+                    
                     <!-- Video 4 -->
                     <div class="video-container fade-in" id="video4">
                         <!-- O iframe será carregado via JavaScript -->
@@ -123,7 +315,8 @@
                           </button>
             
                     </div>
-                    <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                    <br><br>
+                    <hr class="separator"> <br><br>
                    <!-- Video 5 -->
                    <div class="video-container fade-in" id="video5">
                     <!-- O iframe será carregado via JavaScript -->
@@ -137,7 +330,8 @@
                       </button>
         
                 </div>
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                <br><br>
+                <hr class="separator"> <br><br>
                 <!-- Video 6 -->
                 <div class="video-container fade-in" id="video6">
                     <!-- O iframe será carregado via JavaScript -->
@@ -154,7 +348,8 @@
                       </button>
         
                 </div>
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                <br><br>
+                <hr class="separator"> <br><br>
                 <!-- Video 7 -->
                 <div class="video-container fade-in" id="video7">
                     <!-- O iframe será carregado via JavaScript -->
@@ -171,7 +366,8 @@
                       </button>
         
                 </div>
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                <br><br>
+                <hr class="separator"> <br><br>
                 <!-- Video 8 -->
                 <div class="video-container fade-in" id="video8">
                     <!-- O iframe será carregado via JavaScript -->
@@ -187,7 +383,9 @@
                       </button>
         
                 </div>
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+                <br><br>
+               <hr class="separator"> <br><br>
+            
                 <!-- Video 9 -->
                 <div class="video-container fade-in" id="video9">
                     <!-- O iframe será carregado via JavaScript -->
@@ -203,8 +401,8 @@
                       </button>
         
                 </div>
-
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+<br><br>
+                <hr class="separator"> <br><br>
                 <!-- Video 10 -->
                 <div class="video-container fade-in" id="video10">
                     <!-- O iframe será carregado via JavaScript -->
@@ -221,9 +419,11 @@
                       </button>
         
                 </div>
-
-                <hr class="separator"> <!-- Adicionei uma classe para facilitar a personalização -->
+            </section>          
+                
+                <section id="modulo2">
                 <!-- Video 11 -->
+                <h1> MÓDULO 2</h1>
                 <div class="video-container fade-in" id="video11">
                     <!-- O iframe será carregado via JavaScript -->
                 </div>
@@ -239,6 +439,10 @@
         
                 </div>
             
+            </section>
+            <section id="modulo3">
+
+            </section>
                 </div>
             </div>
         
@@ -333,20 +537,48 @@
         
                 // Função de busca
                 document.getElementById("searchInput").addEventListener("input", function() {
-                    const query = this.value.toLowerCase();
-                    const descriptions = document.querySelectorAll(".descricao");
-        
-                    descriptions.forEach(function(descricao) {
-                        const title = descricao.getAttribute("data-title").toLowerCase();
-                        if (title.includes(query)) {
-                            descricao.style.display = "block";
-                            descricao.previousElementSibling.style.display = "block"; // Mostrar vídeo
-                        } else {
-                            descricao.style.display = "none";
-                            descricao.previousElementSibling.style.display = "none"; // Esconder vídeo
-                        }
-                    });
-                });
+    const query = this.value.toLowerCase().trim(); // Remover espaços extras da busca
+    const descriptions = document.querySelectorAll(".descricao");
+    const videoWrapper = document.querySelector(".video-wrapper");
+    
+    // Esconder todas as aulas inicialmente
+    descriptions.forEach(function(descricao) {
+        descricao.style.display = "none"; // Esconde todas as descrições
+        descricao.previousElementSibling.style.display = "none"; // Esconde todos os vídeos
+    });
+
+    // Armazenar as seções correspondentes à pesquisa
+    let matchingSections = [];
+
+    // Filtrar as aulas com base no termo de pesquisa
+    descriptions.forEach(function(descricao) {
+        const title = descricao.getAttribute("data-title").toLowerCase();
+        if (title.includes(query)) {
+            descricao.style.display = "block"; // Exibe a descrição correspondente
+            descricao.previousElementSibling.style.display = "block"; // Exibe o vídeo correspondente
+            matchingSections.push(descricao.parentElement); // Armazenar a seção da aula
+        }
+    });
+
+    // Remover os separadores (hr) quando há pesquisa
+    const separators = document.querySelectorAll(".separator");
+    separators.forEach(separator => separator.style.display = "none");
+
+    // Reorganizar as seções correspondentes, colocando no topo da página
+    matchingSections.forEach(function(section) {
+        videoWrapper.insertBefore(section, videoWrapper.firstChild); // Move a seção para o topo do wrapper
+    });
+
+    // Forçar a rolagem para o topo da página
+    window.scrollTo(0, 0); // Garante que a tela vai para o topo automaticamente
+});
+
+
+
+ 
+
+
+
             </script>
         
         <script>
@@ -452,27 +684,144 @@ if (typingContainer && typingText) {
 
 
             </script>
-    <script>
-    // Função de pesquisa para filtrar as aulas
-    document.getElementById('searchInput').addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase(); // Pega o termo da pesquisa e transforma para minúsculas
-        const aulas = document.querySelectorAll('.descricao'); // Seleciona todos os elementos com a classe .descricao
-        const separadores = document.querySelectorAll('.separator'); // Seleciona todos os elementos <hr> com a classe .separator
-    
-        aulas.forEach(function(aula, index) {
-            const title = aula.querySelector('h2').textContent.toLowerCase(); // Pega o título da aula
-    
-            // Verifica se o título contém o termo de pesquisa
-            if (title.includes(searchTerm)) {
-                aula.style.display = ''; // Exibe a aula
-                separadores[index].style.display = ''; // Exibe o <hr> correspondente
-            } else {
-                aula.style.display = 'none'; // Oculta a aula
-                separadores[index].style.display = 'none'; // Oculta o <hr> correspondente
-            }
-        });
-    });
+   
+
+<script>
+  // Evento de clique no ícone do menu
+const menuIcon = document.getElementById("menu-icon");
+const menu = document.getElementById("menu");
+
+menuIcon.addEventListener("click", function () {
+  this.classList.toggle("open");
+  menu.classList.toggle("open");
+});
+
+// Fecha o menu ao clicar fora dele
+document.addEventListener("click", function (event) {
+  if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+    menu.classList.remove("open");
+    menuIcon.classList.remove("open");
+  }
+});
+
+// Evento de clique nos links do menu para rolar suavemente até a seção e exibir apenas o conteúdo correspondente
+const menuLinks = document.querySelectorAll(".menu ul li a");
+const sections = document.querySelectorAll("section");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const sectionId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      // Esconde todas as seções
+      sections.forEach((section) => {
+        section.style.display = "none";
+      });
+
+      // Mostra apenas a seção correspondente
+      targetSection.style.display = "block";
+
+      window.scrollTo({
+        top: targetSection.offsetTop - 50,
+        behavior: "smooth",
+      });
+    }
+
+    // Fecha o menu após o clique (apenas em dispositivos móveis)
+    if (window.innerWidth <= 768) {
+      menu.classList.remove("open");
+      menuIcon.classList.remove("open");
+    }
+  });
+});
+
+// Garante que apenas a primeira seção esteja visível ao carregar a página
+window.addEventListener("load", function () {
+  sections.forEach((section, index) => {
+    if (index === 0) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
+});
+
+
+
 </script>
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu");
+  const closeIcon = document.querySelector(".close-icon");
+
+  // Alternar menu ao clicar no hambúrguer
+  menuIcon.addEventListener("click", function () {
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+      closeIcon.style.display = "block"; // Mostra o X
+      menuIcon.querySelectorAll("div").forEach(div => div.style.display = "none"); // Esconde barras
+    } else {
+      closeIcon.style.display = "none"; // Esconde o X
+      menuIcon.querySelectorAll("div").forEach(div => div.style.display = "block"); // Mostra barras
+    }
+  });
+
+  // Fecha o menu ao clicar no "X"
+  closeIcon.addEventListener("click", function (event) {
+    event.stopPropagation(); // Impede que o clique se propague para o ícone do menu
+    menu.classList.remove("active");
+    closeIcon.style.display = "none"; // Esconde o X
+    menuIcon.querySelectorAll("div").forEach(div => div.style.display = "block"); // Mostra barras
+  });
+
+  // Fecha o menu ao clicar fora dele
+  document.addEventListener("click", function (event) {
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+      menu.classList.remove("active");
+      closeIcon.style.display = "none"; // Esconde o X
+      menuIcon.querySelectorAll("div").forEach(div => div.style.display = "block"); // Mostra barras
+    }
+  });
+});
+
+
+</script>
+
+<script>
+   
+
+  // Adicionando o efeito de deslizar para cima e para baixo
+  let touchStartY = 0;
+  let touchEndY = 0;
+
+  menu.addEventListener("touchstart", function (event) {
+    touchStartY = event.touches[0].clientY; // Pega a posição inicial do toque
+  });
+
+  menu.addEventListener("touchend", function (event) {
+    touchEndY = event.changedTouches[0].clientY; // Pega a posição final do toque
+
+    if (touchStartY - touchEndY > 100) { // Deslizou para baixo
+      menu.classList.add("active");
+    } else if (touchEndY - touchStartY > 100) { // Deslizou para cima
+      menu.classList.remove("active");
+    }
+  });
+
+
+</script>
+<script>
+
+
+
+</script>
+
 
             </body>
           <br><br><br><br><br><br>
