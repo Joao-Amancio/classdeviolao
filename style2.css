@@ -316,6 +316,9 @@ width: 100%;
       justify-content: center;
       gap: 10px;
       font-size: 24px;
+
+      -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+      outline: none; /* Remove o contorno de foco */
     }
 
     #social-links a {
@@ -328,6 +331,9 @@ width: 100%;
       color: #fff;
       background: #555;
       transition: background 0.2s;
+
+      -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+      outline: none; /* Remove o contorno de foco */
     }
 
     #social-links a:hover {
@@ -624,4 +630,7 @@ footer {
 
 
 
-
+a {
+  -webkit-tap-highlight-color: transparent; /* Remove o flash azul em dispositivos Android */
+  outline: none; /* Remove o contorno de foco */
+}
