@@ -17,17 +17,23 @@
   padding: 15px 20px;
   background-color: #af921f;
   color: white;
-  border-radius: 20px;
-  width: 100%; 
-  box-sizing: border-box; 
   
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed; /* Cabeçalho fixo na tela */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
+
 
 
 
 .logo {
   font-size: 15px;
   font-weight: bold;
+  
 }
 
 .menu {
@@ -57,13 +63,24 @@
 .menu ul li a:hover {
   color: #ffcc00;
 }
-.menu-icon {
+/*.menu-icon {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
   position: relative;
   z-index: 100;
+} */
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative; /* Mantém dentro do header */
+  z-index: 101;
+  width: 30px;
+  height: 30px;
 }
 
 .menu-icon div {
@@ -74,22 +91,43 @@
 }
 
 /* Ícone "X" para fechar o menu */
-.close-icon {
+/*.close-icon {
   display: none;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  position: absolute;
-  top: -5px;
-  right: 5px;
+  position: fixed;
+  top: 65px;
+  right: 65px;
   cursor: pointer;
+  z-index: 101;
+} */
+
+.close-icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute; /* Permanece sobre o hambúrguer */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 102;
 }
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Esconde no desktop */
+  }
+}
+
 
 .close-icon:hover {
   color: #ffcc00;
 }
 
-/* Quando o menu está aberto, mostra o "X" */
+/* Quando o menu está aberto, o "X" aparece no lugar do hambúrguer */
 .menu.active ~ .menu-icon .close-icon {
   display: block;
 }
@@ -152,7 +190,7 @@
        } 
     
        .novas-aulas {
-    font-size: 18px;
+    font-size: 25px;
     font-family: cursive;
     color: rgb(247, 246, 242);
     text-align: center;
@@ -222,6 +260,7 @@
                         <li><a href="#modulo1">MÓDULO 1 </a></li> 
                         <li><a href="#modulo2">MÓDULO 2</a></li>
                         <li><a href="#modulo3">MÓDULO 3</a></li>
+                        
                         
                       </ul>
                     </nav>
@@ -443,6 +482,8 @@
             <section id="modulo3">
 
             </section>
+
+            
                 </div>
             </div>
         

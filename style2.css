@@ -387,7 +387,7 @@ width: 100%;
     .typing-container {
  display: block;
  position: fixed;
- margin-top: 300px;
+ margin-top: 320px;
  margin-right: 700px; 
  font-weight: bold;
  color: rgb(38, 38, 38);
@@ -450,10 +450,10 @@ margin-top: 20px;
 /* Estilização da imagem fixa e centralizada */
 .img-box img {
   position: fixed;
-  top: 30%;              /* Centraliza verticalmente */
+  top: 35%;              /* Centraliza verticalmente */
   left: 30%;             /* Centraliza horizontalmente */
   transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
-  width: 30%;            /* Define um tamanho proporcional */
+  width: 20%;            /* Define um tamanho proporcional */
   max-width: 300px;      /* Define um tamanho máximo */
   border-radius: 70px;
   border: 5px solid #ccc; /* Cor e espessura da borda */
